@@ -1,6 +1,6 @@
 import UIKit
 
-class ProfileViewController: UIViewController {
+class TodoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -14,6 +14,8 @@
 		DD73F68D2A347C6800EEEE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD73F68B2A347C6800EEEE08 /* Main.storyboard */; };
 		DD73F68F2A347C6900EEEE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD73F68E2A347C6900EEEE08 /* Assets.xcassets */; };
 		DD73F6922A347C6900EEEE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD73F6902A347C6900EEEE08 /* LaunchScreen.storyboard */; };
+		DDA9A17F2A355FE300BE00A5 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */; };
+		DDA9A1812A355FF800BE00A5 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DD73F68E2A347C6900EEEE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD73F6912A347C6900EEEE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD73F6932A347C6900EEEE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +69,17 @@
 		DD73F6842A347C6800EEEE08 /* RYTaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD73F6892A347C6800EEEE08 /* ViewController.swift */,
+				DD08F4C02A34B98200FE53C7 /* ProfileViewController.swift */,
+				DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */,
+				DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */,
 				DD08F4C22A34B98C00FE53C7 /* ViewControllers */,
 				DD73F6852A347C6800EEEE08 /* AppDelegate.swift */,
 				DD73F6872A347C6800EEEE08 /* SceneDelegate.swift */,
-				DD73F6892A347C6800EEEE08 /* ViewController.swift */,
 				DD73F68B2A347C6800EEEE08 /* Main.storyboard */,
 				DD73F68E2A347C6900EEEE08 /* Assets.xcassets */,
 				DD73F6902A347C6900EEEE08 /* LaunchScreen.storyboard */,
 				DD73F6932A347C6900EEEE08 /* Info.plist */,
-				DD08F4C02A34B98200FE53C7 /* ProfileViewController.swift */,
 			);
 			path = RYTaskApp;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 				DD73F68A2A347C6800EEEE08 /* ViewController.swift in Sources */,
 				DD73F6862A347C6800EEEE08 /* AppDelegate.swift in Sources */,
 				DD08F4C12A34B98200FE53C7 /* ProfileViewController.swift in Sources */,
+				DDA9A1812A355FF800BE00A5 /* PomodoroViewController.swift in Sources */,
 				DD73F6882A347C6800EEEE08 /* SceneDelegate.swift in Sources */,
+				DDA9A17F2A355FE300BE00A5 /* TodoListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
