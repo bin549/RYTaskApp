@@ -203,12 +203,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="WcD-Ds-mQM">
-                                <rect key="frame" x="94" y="712" width="205" height="40"/>
+                                <rect key="frame" x="66.666666666666686" y="635" width="260" height="67"/>
                                 <subviews>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGw-kU-pcP">
-                                        <rect key="frame" x="0.0" y="0.0" width="63" height="40"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                        <state key="normal" title="Cancel">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="67"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                        <state key="normal" title="停止">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -216,10 +216,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zm-fI-xCi">
-                                        <rect key="frame" x="163" y="0.0" width="42" height="40"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                        <state key="normal" title="Start">
-                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="180" y="0.0" width="80" height="67"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                        <state key="normal" title="开始">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="startButtonTapped:" destination="mkd-TV-1cD" eventType="touchUpInside" id="3mS-Q8-z3R"/>
@@ -229,10 +229,10 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="daX-E0-qwn"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.48031234330884082" green="0.81011284722222221" blue="0.34878077380153405" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="QSh-uZ-VED" firstAttribute="centerX" secondItem="mdP-gQ-xhY" secondAttribute="centerX" id="AsL-PG-7Ed"/>
-                            <constraint firstItem="WcD-Ds-mQM" firstAttribute="bottom" secondItem="mdP-gQ-xhY" secondAttribute="bottom" constant="-100" id="Au5-Se-XXT"/>
+                            <constraint firstItem="WcD-Ds-mQM" firstAttribute="bottom" secondItem="mdP-gQ-xhY" secondAttribute="bottom" constant="-150" id="Au5-Se-XXT"/>
                             <constraint firstItem="WcD-Ds-mQM" firstAttribute="centerX" secondItem="mdP-gQ-xhY" secondAttribute="centerX" id="aX1-ot-bDl"/>
                             <constraint firstItem="QSh-uZ-VED" firstAttribute="top" secondItem="mdP-gQ-xhY" secondAttribute="top" constant="150" id="uXK-MR-7XK"/>
                         </constraints>
