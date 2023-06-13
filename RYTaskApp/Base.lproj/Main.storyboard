@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="-34"/>
+            <point key="canvasLocation" x="-4505" y="-3937"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pXm-NN-LGv">
@@ -102,13 +102,15 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1i2-ar-tdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3439" y="-3299"/>
+            <point key="canvasLocation" x="-3257" y="-3338"/>
         </scene>
-        <!--Item-->
+        <!--代表事项-->
         <scene sceneID="8Qy-14-NEs">
             <objects>
                 <navigationController id="5Zk-py-RoY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0i7-s2-YW9"/>
+                    <tabBarItem key="tabBarItem" title="代表事项" selectedImage="list.bullet.clipboard" catalog="system" id="0i7-s2-YW9">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g6W-Yc-vzl">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -121,11 +123,13 @@
             </objects>
             <point key="canvasLocation" x="-4164" y="-2594"/>
         </scene>
-        <!--Item-->
+        <!--计时器-->
         <scene sceneID="9MT-uW-hvk">
             <objects>
                 <navigationController id="PEf-OB-gj6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Frd-y4-kTp"/>
+                    <tabBarItem key="tabBarItem" title="计时器" selectedImage="clock" catalog="system" id="Frd-y4-kTp">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSD-St-ERz">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -138,11 +142,13 @@
             </objects>
             <point key="canvasLocation" x="-3385" y="-2594"/>
         </scene>
-        <!--Item-->
+        <!--个人中心-->
         <scene sceneID="mqU-Yh-UXa">
             <objects>
                 <navigationController id="hfC-vR-wg6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="UyX-73-uDJ"/>
+                    <tabBarItem key="tabBarItem" title="个人中心" selectedImage="brain.head.profile" catalog="system" id="UyX-73-uDJ">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Anv-WW-qt7">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -159,29 +165,6 @@
         <scene sceneID="fiO-KI-BVf">
             <objects>
                 <viewController storyboardIdentifier="todolist_vc" id="OGd-r5-zPD" customClass="TodoListViewController" customModule="RYTaskApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fdO-0H-rEu">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SMj-BX-cb6">
-                                <rect key="frame" x="76" y="317" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Clh-87-7b6"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="yUS-Tw-a1w"/>
-                            </scrollView>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7il-0b-WnU">
-                                <rect key="frame" x="-2" y="766" width="393" height="47"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="NzE-aE-k8D"/>
-                                    <tabBarItem systemItem="more" id="Oz1-72-imM"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Tct-DA-z0d"/>
-                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                    </view>
                     <navigationItem key="navigationItem" title="TodoList" id="IUz-sz-TOD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjT-gD-3oa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -229,7 +212,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="daX-E0-qwn"/>
-                        <color key="backgroundColor" red="0.48031234330884082" green="0.81011284722222221" blue="0.34878077380153405" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
                             <constraint firstItem="QSh-uZ-VED" firstAttribute="centerX" secondItem="mdP-gQ-xhY" secondAttribute="centerX" id="AsL-PG-7Ed"/>
                             <constraint firstItem="WcD-Ds-mQM" firstAttribute="bottom" secondItem="mdP-gQ-xhY" secondAttribute="bottom" constant="-150" id="Au5-Se-XXT"/>
@@ -246,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F13-5f-SsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3415" y="-1796"/>
+            <point key="canvasLocation" x="-3385" y="-1792"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Zvm-Ac-L3A">
@@ -285,18 +268,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77a-8o-CRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2685" y="-1777"/>
+            <point key="canvasLocation" x="-2628" y="-1781"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="brain.head.profile" catalog="system" width="120" height="128"/>
+        <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
