@@ -23,6 +23,7 @@
 		DD1C05452A385E7A0000DFAC /* GDListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05442A385E7A0000DFAC /* GDListCell.swift */; };
 		DD1C05472A385EA00000DFAC /* GDCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05462A385EA00000DFAC /* GDCheckBox.swift */; };
 		DD1C05492A3861260000DFAC /* DrawController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05482A3861260000DFAC /* DrawController.swift */; };
+		DD25CE7E2A387497005AFEFB /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25CE7D2A387497005AFEFB /* CanvasView.swift */; };
 		DD73F6862A347C6800EEEE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73F6852A347C6800EEEE08 /* AppDelegate.swift */; };
 		DD73F6882A347C6800EEEE08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73F6872A347C6800EEEE08 /* SceneDelegate.swift */; };
 		DD73F68A2A347C6800EEEE08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73F6892A347C6800EEEE08 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 		DD1C05442A385E7A0000DFAC /* GDListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDListCell.swift; sourceTree = "<group>"; };
 		DD1C05462A385EA00000DFAC /* GDCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCheckBox.swift; sourceTree = "<group>"; };
 		DD1C05482A3861260000DFAC /* DrawController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawController.swift; sourceTree = "<group>"; };
+		DD25CE7D2A387497005AFEFB /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		DD73F6822A347C6800EEEE08 /* RYTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD73F6852A347C6800EEEE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD73F6872A347C6800EEEE08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,9 @@
 		DD1C052D2A38546F0000DFAC /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD08F4C02A34B98200FE53C7 /* ProfileViewController.swift */,
+				DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */,
+				DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */,
 				DD1C05482A3861260000DFAC /* DrawController.swift */,
 			);
 			path = controllers;
@@ -139,9 +144,6 @@
 				DD1C05222A384E3E0000DFAC /* extension */,
 				DD1C051B2A384D760000DFAC /* custom */,
 				DD73F6892A347C6800EEEE08 /* ViewController.swift */,
-				DD08F4C02A34B98200FE53C7 /* ProfileViewController.swift */,
-				DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */,
-				DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */,
 				DD73F6852A347C6800EEEE08 /* AppDelegate.swift */,
 				DD73F6872A347C6800EEEE08 /* SceneDelegate.swift */,
 				DD73F68B2A347C6800EEEE08 /* Main.storyboard */,
@@ -149,6 +151,7 @@
 				DD73F6902A347C6900EEEE08 /* LaunchScreen.storyboard */,
 				DD73F6932A347C6900EEEE08 /* Info.plist */,
 				DD1C05322A38556B0000DFAC /* fonts */,
+				DD25CE7D2A387497005AFEFB /* CanvasView.swift */,
 			);
 			path = RYTaskApp;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				DD1C05282A3853AA0000DFAC /* GDButton.swift in Sources */,
 				DD73F6862A347C6800EEEE08 /* AppDelegate.swift in Sources */,
 				DD1C05452A385E7A0000DFAC /* GDListCell.swift in Sources */,
+				DD25CE7E2A387497005AFEFB /* CanvasView.swift in Sources */,
 				DD08F4C12A34B98200FE53C7 /* ProfileViewController.swift in Sources */,
 				DD1C052F2A3855140000DFAC /* GDHeaderView.swift in Sources */,
 				DD1C05412A385D1E0000DFAC /* toDo.swift in Sources */,

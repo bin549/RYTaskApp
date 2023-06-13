@@ -65,8 +65,4 @@ class ViewController: UIViewController {
         }, delayFactor: 0.8)
     }
     
-    @IBAction func didTapButton() {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "profile_vc") as! ProfileViewController
-        present(vc, animated: true)
-    }
 }

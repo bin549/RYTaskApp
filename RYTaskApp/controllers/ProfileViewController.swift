@@ -1,6 +1,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    var vc = DrawController()
     let backProgressLayer = CAShapeLayer()
     let bg:UIView = {
         let view = GDGradient()
@@ -22,14 +23,15 @@ class ProfileViewController: UIViewController {
             UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                 self.nextButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             }) { (_) in
-                self.present(DrawController(), animated: true, completion: nil)
+                self.present(self.vc, animated: true)
+//                self.present(DrawController(), animated: true, completion: nil)
             }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.vc = storyboard?.instantiateViewController(withIdentifier: "draw_vc") as! DrawController
         UserDefaults.standard.set(true, forKey: "welcome-controller-visited")
         nextButton.addTarget(self, action: #selector(self.handleNext), for: [.touchUpInside,.touchUpOutside])
         view.backgroundColor = .white
