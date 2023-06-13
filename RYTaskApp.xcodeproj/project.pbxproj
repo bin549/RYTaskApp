@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD08F4C12A34B98200FE53C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD08F4C02A34B98200FE53C7 /* ProfileViewController.swift */; };
 		DD1C05212A384E040000DFAC /* GDGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05202A384E040000DFAC /* GDGradient.swift */; };
 		DD1C05242A384E510000DFAC /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05232A384E510000DFAC /* extension.swift */; };
 		DD1C05262A3852250000DFAC /* GDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05252A3852250000DFAC /* GDLabel.swift */; };
@@ -35,7 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD08F4C02A34B98200FE53C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DD1C05202A384E040000DFAC /* GDGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGradient.swift; sourceTree = "<group>"; };
 		DD1C05232A384E510000DFAC /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		DD1C05252A3852250000DFAC /* GDLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDLabel.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 		DD1C052D2A38546F0000DFAC /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DD08F4C02A34B98200FE53C7 /* ProfileViewController.swift */,
 				DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */,
 				DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */,
 				DD1C05482A3861260000DFAC /* DrawController.swift */,
@@ -237,7 +234,6 @@
 				DD73F6862A347C6800EEEE08 /* AppDelegate.swift in Sources */,
 				DD1C05452A385E7A0000DFAC /* GDListCell.swift in Sources */,
 				DD25CE7E2A387497005AFEFB /* CanvasView.swift in Sources */,
-				DD08F4C12A34B98200FE53C7 /* ProfileViewController.swift in Sources */,
 				DD1C052F2A3855140000DFAC /* GDHeaderView.swift in Sources */,
 				DD1C05412A385D1E0000DFAC /* toDo.swift in Sources */,
 				DD1C052A2A3853F30000DFAC /* optionset.swift in Sources */,

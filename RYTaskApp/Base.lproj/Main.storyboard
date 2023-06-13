@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a9k-7J-V45">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -46,7 +46,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2H-DX-qE1"/>
+                                            <action selector="onLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="el9-je-Lf0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,12 +83,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3234" y="-4070"/>
+            <point key="canvasLocation" x="-3056" y="-4089"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pXm-NN-LGv">
             <objects>
-                <tabBarController id="a9k-7J-V45" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tbc_vc" id="a9k-7J-V45" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="12G-70-5by">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -343,10 +343,9 @@
                                             <constraint firstAttribute="height" constant="20" id="6Ga-8G-4JK"/>
                                             <constraint firstAttribute="width" constant="20" id="rbO-Zh-qKj"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="up-arrow"/>
+                                        <state key="normal" backgroundImage="download"/>
                                         <connections>
-                                            <action selector="btnArrow:" destination="XAr-i9-bWS" eventType="touchUpInside" id="Rhj-rK-aCW"/>
-                                            <action selector="onClickHideShowFeatureView:" destination="XAr-i9-bWS" eventType="touchUpInside" id="zRU-M8-6zb"/>
+                                            <action selector="onClickSave:" destination="XAr-i9-bWS" eventType="touchUpInside" id="yBi-iD-D8k"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEL-Ga-nzD">
@@ -370,20 +369,7 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="undo"/>
                                         <connections>
-                                            <action selector="onClickClear:" destination="XAr-i9-bWS" eventType="touchUpInside" id="ask-B4-ew6"/>
-                                            <action selector="onClickUndo:" destination="XAr-i9-bWS" eventType="touchUpInside" id="dcz-Os-nwz"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gym-sc-pRk">
-                                        <rect key="frame" x="281" y="12.666666666666629" width="20" height="20"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="9OX-Zy-O2M"/>
-                                            <constraint firstAttribute="width" constant="20" id="qts-8v-bwr"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="download"/>
-                                        <connections>
-                                            <action selector="onClickSave:" destination="XAr-i9-bWS" eventType="touchUpInside" id="OVU-lE-gel"/>
+                                            <action selector="onClickUndo:" destination="XAr-i9-bWS" eventType="touchUpInside" id="Wzl-iQ-Qxe"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -391,14 +377,12 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="cAp-Ry-v0J" firstAttribute="centerY" secondItem="deW-yu-gom" secondAttribute="centerY" id="0vh-t7-xNk"/>
-                                    <constraint firstItem="gym-sc-pRk" firstAttribute="centerY" secondItem="j1A-kv-Q6f" secondAttribute="centerY" id="3y8-wn-ZiT"/>
                                     <constraint firstItem="N9f-Jf-N2U" firstAttribute="leading" secondItem="LBw-xO-3ag" secondAttribute="leading" id="5pP-Ry-vwD"/>
                                     <constraint firstItem="6rk-Pk-6HT" firstAttribute="leading" secondItem="LBw-xO-3ag" secondAttribute="leading" id="6uB-Yo-L2D"/>
                                     <constraint firstItem="4hM-BK-KK9" firstAttribute="leading" secondItem="LBw-xO-3ag" secondAttribute="leading" id="AvL-dc-X03"/>
                                     <constraint firstAttribute="trailing" secondItem="6rk-Pk-6HT" secondAttribute="trailing" constant="8" id="EhB-oe-snr"/>
                                     <constraint firstItem="4hM-BK-KK9" firstAttribute="trailing" secondItem="LBw-xO-3ag" secondAttribute="trailing" id="G6H-Yi-cIo"/>
                                     <constraint firstItem="nEL-Ga-nzD" firstAttribute="leading" secondItem="j1A-kv-Q6f" secondAttribute="trailing" constant="8" id="Hyl-Dx-uXB"/>
-                                    <constraint firstItem="j1A-kv-Q6f" firstAttribute="leading" secondItem="gym-sc-pRk" secondAttribute="trailing" constant="8" id="Laa-I2-td3"/>
                                     <constraint firstItem="N9f-Jf-N2U" firstAttribute="trailing" secondItem="LBw-xO-3ag" secondAttribute="trailing" id="LvY-9X-Rt0"/>
                                     <constraint firstItem="deW-yu-gom" firstAttribute="leading" secondItem="LBw-xO-3ag" secondAttribute="leading" id="M49-CV-11x"/>
                                     <constraint firstItem="LBw-xO-3ag" firstAttribute="trailing" secondItem="cAp-Ry-v0J" secondAttribute="trailing" constant="8" id="SEn-cc-SyH"/>
@@ -455,7 +439,6 @@
         <image name="office-material" width="32" height="32"/>
         <image name="opacity" width="32" height="32"/>
         <image name="undo" width="64" height="64"/>
-        <image name="up-arrow" width="32" height="32"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

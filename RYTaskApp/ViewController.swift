@@ -7,6 +7,7 @@ class ViewController: UIViewController {
         imageView.layer.masksToBounds = true
         return imageView
     }()
+    var tbc = UITabBarController()
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tbc = storyboard?.instantiateViewController(withIdentifier: "tbc_vc") as! UITabBarController
         logoImage.translatesAutoresizingMaskIntoConstraints = false
         loginView.addSubview(logoImage)
         NSLayoutConstraint.activate([
@@ -65,4 +67,9 @@ class ViewController: UIViewController {
         }, delayFactor: 0.8)
     }
     
+    
+    @IBAction func onLoginClick(_ sender: UIButton) {
+        self.tbc.modalPresentationStyle  = .fullScreen
+        self.present(self.tbc, animated: true)
+    }
 }

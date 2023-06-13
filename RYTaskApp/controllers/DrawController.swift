@@ -22,7 +22,6 @@ class DrawController: UIViewController {
         featuresView.transform = CGAffineTransform(translationX: 0, y: kHeight - (kHeight - 80))
     }
     
-    
     @IBAction func onClickUndo(_ sender: Any) {
         canvasView.undoDraw()
     }
@@ -40,25 +39,8 @@ class DrawController: UIViewController {
     }
     
     @IBAction func onClickSave(_ sender: Any) {
-            let image = canvasView.takeScreenshot()
-            UIImageWriteToSavedPhotosAlbum(image, self, #selector(imageSaved(_:didFinishSavingWithError:contextType:)), nil)
-    }
-    
-    
-    @IBAction func onClickHideShowFeatureView(_ sender: UIButton) {
-        if sender.isSelected {
-            UIView.animate(withDuration: animationTime) {
-                sender.isSelected = false
-                self.btnArrow.setBackgroundImage(#imageLiteral(resourceName: "up-arrow"), for: .normal)
-                self.featuresView.transform = CGAffineTransform(translationX: 0, y: self.kHeight - (self.kHeight - 80))
-            }
-        } else {
-            UIView.animate(withDuration: animationTime) {
-                sender.isSelected = true
-                self.btnArrow.setBackgroundImage(#imageLiteral(resourceName: "down-arrow"), for: .normal)
-                self.featuresView.transform = CGAffineTransform.identity
-            }
-        }
+        let image = canvasView.takeScreenshot()
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(imageSaved(_:didFinishSavingWithError:contextType:)), nil)
     }
     
     @objc func imageSaved(_ image: UIImage, didFinishSavingWithError error: Error?, contextType: UnsafeRawPointer) {
