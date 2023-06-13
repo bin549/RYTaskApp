@@ -13,10 +13,16 @@
 		DD1C05262A3852250000DFAC /* GDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05252A3852250000DFAC /* GDLabel.swift */; };
 		DD1C05282A3853AA0000DFAC /* GDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05272A3853AA0000DFAC /* GDButton.swift */; };
 		DD1C052A2A3853F30000DFAC /* optionset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05292A3853F30000DFAC /* optionset.swift */; };
-		DD1C052C2A3854650000DFAC /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C052B2A3854650000DFAC /* ListController.swift */; };
 		DD1C052F2A3855140000DFAC /* GDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C052E2A3855140000DFAC /* GDHeaderView.swift */; };
 		DD1C05332A38556B0000DFAC /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = DD1C05322A38556B0000DFAC /* fonts */; };
 		DD1C05382A3855AC0000DFAC /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05372A3855AC0000DFAC /* protocol.swift */; };
+		DD1C053A2A385A410000DFAC /* GDNewItemPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05392A385A410000DFAC /* GDNewItemPopup.swift */; };
+		DD1C053C2A385A760000DFAC /* GDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C053B2A385A760000DFAC /* GDTextField.swift */; };
+		DD1C053E2A385B3A0000DFAC /* GDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C053D2A385B3A0000DFAC /* GDTableView.swift */; };
+		DD1C05412A385D1E0000DFAC /* toDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05402A385D1E0000DFAC /* toDo.swift */; };
+		DD1C05452A385E7A0000DFAC /* GDListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05442A385E7A0000DFAC /* GDListCell.swift */; };
+		DD1C05472A385EA00000DFAC /* GDCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05462A385EA00000DFAC /* GDCheckBox.swift */; };
+		DD1C05492A3861260000DFAC /* DrawController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C05482A3861260000DFAC /* DrawController.swift */; };
 		DD73F6862A347C6800EEEE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73F6852A347C6800EEEE08 /* AppDelegate.swift */; };
 		DD73F6882A347C6800EEEE08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73F6872A347C6800EEEE08 /* SceneDelegate.swift */; };
 		DD73F68A2A347C6800EEEE08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD73F6892A347C6800EEEE08 /* ViewController.swift */; };
@@ -34,10 +40,16 @@
 		DD1C05252A3852250000DFAC /* GDLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDLabel.swift; sourceTree = "<group>"; };
 		DD1C05272A3853AA0000DFAC /* GDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDButton.swift; sourceTree = "<group>"; };
 		DD1C05292A3853F30000DFAC /* optionset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionset.swift; sourceTree = "<group>"; };
-		DD1C052B2A3854650000DFAC /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		DD1C052E2A3855140000DFAC /* GDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDHeaderView.swift; sourceTree = "<group>"; };
 		DD1C05322A38556B0000DFAC /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../Programming/Swift/GetItDone/GetItDone/fonts; sourceTree = "<group>"; };
 		DD1C05372A3855AC0000DFAC /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
+		DD1C05392A385A410000DFAC /* GDNewItemPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDNewItemPopup.swift; sourceTree = "<group>"; };
+		DD1C053B2A385A760000DFAC /* GDTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTextField.swift; sourceTree = "<group>"; };
+		DD1C053D2A385B3A0000DFAC /* GDTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTableView.swift; sourceTree = "<group>"; };
+		DD1C05402A385D1E0000DFAC /* toDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDo.swift; sourceTree = "<group>"; };
+		DD1C05442A385E7A0000DFAC /* GDListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDListCell.swift; sourceTree = "<group>"; };
+		DD1C05462A385EA00000DFAC /* GDCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCheckBox.swift; sourceTree = "<group>"; };
+		DD1C05482A3861260000DFAC /* DrawController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawController.swift; sourceTree = "<group>"; };
 		DD73F6822A347C6800EEEE08 /* RYTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD73F6852A347C6800EEEE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD73F6872A347C6800EEEE08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,13 +73,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD08F4C22A34B98C00FE53C7 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		DD1C051B2A384D760000DFAC /* custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +80,11 @@
 				DD1C05252A3852250000DFAC /* GDLabel.swift */,
 				DD1C05272A3853AA0000DFAC /* GDButton.swift */,
 				DD1C052E2A3855140000DFAC /* GDHeaderView.swift */,
+				DD1C05392A385A410000DFAC /* GDNewItemPopup.swift */,
+				DD1C053B2A385A760000DFAC /* GDTextField.swift */,
+				DD1C053D2A385B3A0000DFAC /* GDTableView.swift */,
+				DD1C05442A385E7A0000DFAC /* GDListCell.swift */,
+				DD1C05462A385EA00000DFAC /* GDCheckBox.swift */,
 			);
 			path = custom;
 			sourceTree = "<group>";
@@ -92,9 +102,17 @@
 		DD1C052D2A38546F0000DFAC /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DD1C052B2A3854650000DFAC /* ListController.swift */,
+				DD1C05482A3861260000DFAC /* DrawController.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		DD1C053F2A385D170000DFAC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DD1C05402A385D1E0000DFAC /* toDo.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		DD73F6792A347C6800EEEE08 = {
@@ -116,6 +134,7 @@
 		DD73F6842A347C6800EEEE08 /* RYTaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD1C053F2A385D170000DFAC /* model */,
 				DD1C052D2A38546F0000DFAC /* controllers */,
 				DD1C05222A384E3E0000DFAC /* extension */,
 				DD1C051B2A384D760000DFAC /* custom */,
@@ -123,7 +142,6 @@
 				DD08F4C02A34B98200FE53C7 /* ProfileViewController.swift */,
 				DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */,
 				DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */,
-				DD08F4C22A34B98C00FE53C7 /* ViewControllers */,
 				DD73F6852A347C6800EEEE08 /* AppDelegate.swift */,
 				DD73F6872A347C6800EEEE08 /* SceneDelegate.swift */,
 				DD73F68B2A347C6800EEEE08 /* Main.storyboard */,
@@ -207,18 +225,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1C052C2A3854650000DFAC /* ListController.swift in Sources */,
+				DD1C053C2A385A760000DFAC /* GDTextField.swift in Sources */,
+				DD1C05472A385EA00000DFAC /* GDCheckBox.swift in Sources */,
 				DD73F68A2A347C6800EEEE08 /* ViewController.swift in Sources */,
+				DD1C053A2A385A410000DFAC /* GDNewItemPopup.swift in Sources */,
 				DD1C05212A384E040000DFAC /* GDGradient.swift in Sources */,
 				DD1C05282A3853AA0000DFAC /* GDButton.swift in Sources */,
 				DD73F6862A347C6800EEEE08 /* AppDelegate.swift in Sources */,
+				DD1C05452A385E7A0000DFAC /* GDListCell.swift in Sources */,
 				DD08F4C12A34B98200FE53C7 /* ProfileViewController.swift in Sources */,
 				DD1C052F2A3855140000DFAC /* GDHeaderView.swift in Sources */,
+				DD1C05412A385D1E0000DFAC /* toDo.swift in Sources */,
 				DD1C052A2A3853F30000DFAC /* optionset.swift in Sources */,
 				DDA9A1812A355FF800BE00A5 /* PomodoroViewController.swift in Sources */,
 				DD73F6882A347C6800EEEE08 /* SceneDelegate.swift in Sources */,
 				DD1C05262A3852250000DFAC /* GDLabel.swift in Sources */,
 				DD1C05382A3855AC0000DFAC /* protocol.swift in Sources */,
+				DD1C053E2A385B3A0000DFAC /* GDTableView.swift in Sources */,
+				DD1C05492A3861260000DFAC /* DrawController.swift in Sources */,
 				DDA9A17F2A355FE300BE00A5 /* TodoListViewController.swift in Sources */,
 				DD1C05242A384E510000DFAC /* extension.swift in Sources */,
 			);

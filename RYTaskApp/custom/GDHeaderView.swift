@@ -31,7 +31,7 @@ class GDHeaderView:UIView {
         bg.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         addSubview(titleLabel)
         addSubview(subtitleLabel)
-        titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 12).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 32).isActive = true
         titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 20 + 16).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: centerXAnchor).isActive = true
         subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true

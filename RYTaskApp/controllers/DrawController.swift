@@ -1,8 +1,5 @@
-//
-//  DrawController.swift
-//  RYTaskApp
-//
-//  Created by App on 2023/6/13.
-//
+import UIKit
 
-import Foundation
+class DrawController: UIViewController {
+    
+}

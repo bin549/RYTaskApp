@@ -1,8 +1,14 @@
-//
-//  GDTableView.swift
-//  RYTaskApp
-//
-//  Created by App on 2023/6/13.
-//
+import UIKit
 
-import Foundation
+class GDTableView:UITableView {
+    override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
+        checkIfAutoLayout()
+        backgroundColor = .clear
+        separatorStyle = .none
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
