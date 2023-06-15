@@ -5,7 +5,7 @@ class GDButton:UIButton {
     var type:ButtonOptions!
     var radius:CGFloat!
     
-    init(title:String = "button text", frame:CGRect = .zero, type:ButtonOptions = .roundedText, radius:CGFloat = 20) {
+    init(title:String = "button text", frame:CGRect = .zero, type:ButtonOptions = .roundedText, radius:CGFloat = 30) {
         super.init(frame: frame)
         if frame == .zero {
             self.translatesAutoresizingMaskIntoConstraints = false
@@ -19,7 +19,7 @@ class GDButton:UIButton {
     func phaseTwo() {
         self.backgroundColor = .white
         if let titleLabel = self.titleLabel {
-            titleLabel.font = UIFont(name: "Raleway-v4020-Regular", size: 16)
+            titleLabel.font = UIFont(name: "Raleway-v4020-Regular", size: 36)
         }
         switch self.type {
             case ButtonOptions.roundedText:
@@ -36,7 +36,7 @@ class GDButton:UIButton {
 
     func roundedText() {
         self.setTitle(self.title, for: .normal)
-        self.setTitleColor(.grayZero, for: .normal)
+        self.setTitleColor(.black, for: .normal)
         self.layer.cornerRadius = self.radius
     }
     

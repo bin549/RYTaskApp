@@ -59,8 +59,12 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         listData = []
+        let newItem1 = ToDo(id: self.listData.count, title: "买咖啡", status: false)
+        let newItem2 = ToDo(id: self.listData.count, title: "吃苹果", status: true)
+        listData.append(newItem1)
+        listData.append(newItem2)
         self.updateHeaderItemsLeft()
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         view.addSubview(header)
         header.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         header.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -72,17 +76,17 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
         bgBottom = bg.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
         bgBottom.isActive = true
         bg.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
-        view.addSubview(listTable)
-        listTable.leftAnchor.constraint(equalTo: bg.leftAnchor, constant: tbInset).isActive = true
-        listTable.topAnchor.constraint(equalTo: bg.topAnchor, constant: tbInset).isActive = true
-        listTable.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: tbInset * -1).isActive = true
-        listTable.rightAnchor.constraint(equalTo: bg.rightAnchor, constant: tbInset * -1).isActive = true
         view.addSubview(popup)
         popup.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         popup.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         popup.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         popup.heightAnchor.constraint(equalToConstant: 80).isActive = true
         openAddItemPopup()
+        view.addSubview(listTable)
+        listTable.leftAnchor.constraint(equalTo: bg.leftAnchor, constant: tbInset).isActive = true
+        listTable.topAnchor.constraint(equalTo: bg.topAnchor, constant: tbInset).isActive = true
+        listTable.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: tbInset * -1).isActive = true
+        listTable.rightAnchor.constraint(equalTo: bg.rightAnchor, constant: tbInset * -1).isActive = true
         popup.textField.delegate = self
         popup.delegate = self
         header.delegate = self

@@ -28,10 +28,9 @@ class GDListCell:UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        box.addTarget(self, action: #selector(self.toggleStatus), for: .touchUpInside)
-        selectionStyle = .none
-        backgroundColor = .clear
-        view.backgroundColor = .white
+//        selectionStyle = .none
+//        backgroundColor = .clear
+//        view.backgroundColor = .green
         addSubview(view)
         view.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         view.topAnchor.constraint(equalTo: topAnchor, constant: 3).isActive = true
@@ -47,9 +46,11 @@ class GDListCell:UITableViewCell {
         box.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         box.widthAnchor.constraint(equalToConstant: 22).isActive = true
         box.heightAnchor.constraint(equalTo: box.widthAnchor).isActive = true
+        box.addTarget(self, action: #selector(self.toggleStatus), for: .touchUpInside)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

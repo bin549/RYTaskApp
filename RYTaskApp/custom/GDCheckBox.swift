@@ -7,7 +7,7 @@ class GDCheckBox:UIButton {
             if let toggled = toggled  {
                 UIView.animate(withDuration: 0.2) {
                     if toggled {
-                        self.backgroundColor = .green
+                        self.backgroundColor = .darkGray
                         self.setImage(UIImage(named: "done-icon"), for: .normal)
                     } else {
                         self.backgroundColor = .clear
@@ -17,7 +17,7 @@ class GDCheckBox:UIButton {
             }
         }
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
