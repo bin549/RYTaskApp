@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 0.8, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 2, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.8, delay: 0.3, usingSpringWithDamping: 0.5, initialSpringVelocity: 2, options: .curveEaseOut, animations: {
             self.loginView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }) { (success) in
             self.setupMoveLogoAnimation()
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     func setupMoveLogoAnimation() {
-        moveLogoAnimator = UIViewPropertyAnimator(duration: 2.0, curve: .easeIn, animations: nil)
+        moveLogoAnimator = UIViewPropertyAnimator(duration: 0.8, curve: .easeIn, animations: nil)
         moveLogoAnimator.addAnimations({
             self.logoImage.frame.origin.y = CGFloat(20.0)
             self.loginView.backgroundColor = UIColor.white
@@ -66,7 +66,6 @@ class ViewController: UIViewController {
             self.loginButton.alpha = 1.0
         }, delayFactor: 0.8)
     }
-    
     
     @IBAction func onLoginClick(_ sender: UIButton) {
         self.tbc.modalPresentationStyle  = .fullScreen

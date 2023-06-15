@@ -92,7 +92,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="12G-70-5by">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="5Zk-py-RoY" kind="relationship" relationship="viewControllers" id="tLa-uZ-8fW"/>
@@ -108,7 +109,7 @@
         <scene sceneID="8Qy-14-NEs">
             <objects>
                 <navigationController id="5Zk-py-RoY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="代表事项" selectedImage="list.bullet.clipboard" catalog="system" id="0i7-s2-YW9">
+                    <tabBarItem key="tabBarItem" title="代表事项" image="list.dash" catalog="system" selectedImage="list.dash" id="0i7-s2-YW9">
                         <color key="badgeColor" systemColor="labelColor"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g6W-Yc-vzl">
@@ -127,7 +128,7 @@
         <scene sceneID="9MT-uW-hvk">
             <objects>
                 <navigationController id="PEf-OB-gj6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="计时器" selectedImage="clock" catalog="system" id="Frd-y4-kTp">
+                    <tabBarItem key="tabBarItem" title="计时器" image="deskclock" catalog="system" selectedImage="deskclock" id="Frd-y4-kTp">
                         <color key="badgeColor" systemColor="labelColor"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSD-St-ERz">
@@ -146,7 +147,7 @@
         <scene sceneID="mqU-Yh-UXa">
             <objects>
                 <navigationController id="hfC-vR-wg6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="个人中心" selectedImage="brain.head.profile" catalog="system" id="UyX-73-uDJ">
+                    <tabBarItem key="tabBarItem" title="个人中心" image="pencil.tip" catalog="system" selectedImage="pencil.tip" id="UyX-73-uDJ">
                         <color key="badgeColor" systemColor="labelColor"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Anv-WW-qt7">
@@ -161,17 +162,17 @@
             </objects>
             <point key="canvasLocation" x="-2628" y="-2594"/>
         </scene>
-        <!--TodoList-->
+        <!--Todo List View Controller-->
         <scene sceneID="fiO-KI-BVf">
             <objects>
                 <viewController storyboardIdentifier="todolist_vc" id="OGd-r5-zPD" customClass="TodoListViewController" customModule="RYTaskApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="TodoList" id="IUz-sz-TOD"/>
+                    <navigationItem key="navigationItem" id="IUz-sz-TOD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjT-gD-3oa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4141" y="-1813"/>
         </scene>
-        <!--Pomodoro-->
+        <!--Pomodoro View Controller-->
         <scene sceneID="tQg-YL-5At">
             <objects>
                 <viewController storyboardIdentifier="pomodoro_vc" id="mkd-TV-1cD" customClass="PomodoroViewController" customModule="RYTaskApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -212,7 +213,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="daX-E0-qwn"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="QSh-uZ-VED" firstAttribute="centerX" secondItem="mdP-gQ-xhY" secondAttribute="centerX" id="AsL-PG-7Ed"/>
                             <constraint firstItem="WcD-Ds-mQM" firstAttribute="bottom" secondItem="mdP-gQ-xhY" secondAttribute="bottom" constant="-150" id="Au5-Se-XXT"/>
@@ -220,7 +221,7 @@
                             <constraint firstItem="QSh-uZ-VED" firstAttribute="top" secondItem="mdP-gQ-xhY" secondAttribute="top" constant="150" id="uXK-MR-7XK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pomodoro" id="nnj-Tn-cZ6"/>
+                    <navigationItem key="navigationItem" id="nnj-Tn-cZ6"/>
                     <connections>
                         <outlet property="cancelButton" destination="HGw-kU-pcP" id="N0u-2j-dAC"/>
                         <outlet property="startButton" destination="2Zm-fI-xCi" id="785-ca-tIW"/>
@@ -429,21 +430,22 @@
             <point key="canvasLocation" x="-2532" y="-1792"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="labelColor"/>
     <resources>
         <image name="back" width="626" height="417"/>
-        <image name="brain.head.profile" catalog="system" width="120" height="128"/>
         <image name="brush" width="64" height="64"/>
-        <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="deskclock" catalog="system" width="128" height="125"/>
         <image name="download" width="64" height="64"/>
-        <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="office-material" width="32" height="32"/>
         <image name="opacity" width="32" height="32"/>
+        <image name="pencil.tip" catalog="system" width="99" height="128"/>
         <image name="undo" width="64" height="64"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

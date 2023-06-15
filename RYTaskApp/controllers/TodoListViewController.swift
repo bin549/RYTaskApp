@@ -8,7 +8,7 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
     }()
     var bgBottom:NSLayoutConstraint!
     
-    let header = GDHeaderView(title: "Stuff to get done", subtitle: "4 left")
+    let header = GDHeaderView(title: "待办事项", subtitle: "4 left")
     let popup = GDNewItemPopup()
     let tbInset:CGFloat = 16
     let listTable = GDTableView()
@@ -32,10 +32,8 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
     
     func addItemToList(text:String) {
         if (notInList(text:text)) {
-//            let newItem = ToDo(id: self.listData.count, title: text, status: false)
-//            self.listData.append(newItem)
-//            CoreDataManager.shared.createToDo(id: Double(self.listData.count), title: text, status: false)
-//            self.listData = CoreDataManager.shared.fetchToDos()
+            let newItem = ToDo(id: self.listData.count, title: text, status: false)
+            self.listData.append(newItem)
             self.listTable.reloadData()
             self.updateHeaderItemsLeft()
             self.popup.textField.text = ""
@@ -61,7 +59,7 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        listData = CoreDataManager.shared.fetchToDos()
+        listData = []
         self.updateHeaderItemsLeft()
         view.backgroundColor = .white
         view.addSubview(header)
@@ -94,7 +92,6 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
         listTable.register(GDListCell.self, forCellReuseIdentifier: CELL_ID)
     }
 
-    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -139,8 +136,17 @@ extension TodoListViewController: UITextFieldDelegate {
 }
 
 extension TodoListViewController: UITableViewDelegate, UITableViewDataSource, GDListCellDelegate {
-    func toggleToDo() {
-//        self.listData = CoreDataManager.shared.fetchToDos()
+    func toggleToDo(toDo updateToDo:ToDo) {
+        let newListData = self.listData.map { (oldToDo) -> ToDo in
+            if oldToDo.id == updateToDo.id {
+                var newToDo = oldToDo
+                newToDo.status = updateToDo.status
+                newToDo.title = updateToDo.title
+                return newToDo
+            }
+            return oldToDo
+        }
+        self.listData = newListData
         self.listTable.reloadData()
         self.updateHeaderItemsLeft()
     }

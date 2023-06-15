@@ -5,14 +5,11 @@ class GDListCell:UITableViewCell {
     
     @objc func toggleStatus() {
         if let delegate = self.delegate, let toDo = self.toDo {
-//            let newToDo = ToDo(id: toDo.id, title: textField.text!, status: !toDo.status)
-//            delegate.toggleToDo(toDo: newToDo)
-//            CoreDataManager.shared.deleteToDo(id: toDo.id)
-//            CoreDataManager.shared.createToDo(id: toDo.id, title: textField.text!, status: !toDo.status)
-            delegate.toggleToDo()
+            let newToDo = ToDo(id: toDo.id, title: textField.text!, status: !toDo.status)
+            delegate.toggleToDo(toDo: newToDo)
         }
     }
-//    let titleLabel = GDLabel(color: .grayZero, size: 14)
+    
     let textField = GDTextField(placeholder: "ToDo", radius: 0, inset: 14)
     let view:UIView = {
         let view = UIView()
@@ -25,6 +22,7 @@ class GDListCell:UITableViewCell {
         didSet {
             if let toDo = toDo  {
                 box.toggled = toDo.status
+                box.id = toDo.id
                 textField.text = toDo.title
             }
         }
