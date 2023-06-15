@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
     lazy var logoImage: UIImageView = {
-        let image = UIImage(named: "cat")!
+        let image = UIImage(named: "Fx5yoRHakAIc8ea")!
         let imageView = UIImageView(image: image)
         imageView.layer.masksToBounds = true
         return imageView
@@ -68,6 +68,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onLoginClick(_ sender: UIButton) {
+        
+        let userRequest = SignInUserRequest(
+            email: self.usernameTextField.text ?? "",
+            password: self.passwordTextField.text ?? ""
+        )
+        if !Validator.isValidEmail(for: userRequest.email) {
+            AlertManager.showInvalidEmailAlert(on: self)
+            return
+        }
+        if !Validator.isPasswordValid(for: userRequest.password) {
+            AlertManager.showInvalidPasswordAlert(on: self)
+            return
+        }
+        
         self.tbc.modalPresentationStyle  = .fullScreen
         self.present(self.tbc, animated: true)
     }

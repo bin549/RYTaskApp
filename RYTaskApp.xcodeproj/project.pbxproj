@@ -29,6 +29,9 @@
 		DD73F68D2A347C6800EEEE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD73F68B2A347C6800EEEE08 /* Main.storyboard */; };
 		DD73F68F2A347C6900EEEE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD73F68E2A347C6900EEEE08 /* Assets.xcassets */; };
 		DD73F6922A347C6900EEEE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD73F6902A347C6900EEEE08 /* LaunchScreen.storyboard */; };
+		DD82A3522A3B1817005F5A8A /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82A3502A3B1817005F5A8A /* Validator.swift */; };
+		DD82A3532A3B1817005F5A8A /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82A3512A3B1817005F5A8A /* AlertManager.swift */; };
+		DD82A3552A3B1886005F5A8A /* SignInUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82A3542A3B1886005F5A8A /* SignInUserRequest.swift */; };
 		DDA9A17F2A355FE300BE00A5 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */; };
 		DDA9A1812A355FF800BE00A5 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +61,9 @@
 		DD73F68E2A347C6900EEEE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD73F6912A347C6900EEEE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD73F6932A347C6900EEEE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD82A3502A3B1817005F5A8A /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		DD82A3512A3B1817005F5A8A /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		DD82A3542A3B1886005F5A8A /* SignInUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUserRequest.swift; sourceTree = "<group>"; };
 		DDA9A17E2A355FE300BE00A5 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		DDA9A1802A355FF800BE00A5 /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DD1C05402A385D1E0000DFAC /* toDo.swift */,
+				DD82A3542A3B1886005F5A8A /* SignInUserRequest.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 		DD73F6842A347C6800EEEE08 /* RYTaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD82A34F2A3B17F1005F5A8A /* utils */,
 				DD1C053F2A385D170000DFAC /* model */,
 				DD1C052D2A38546F0000DFAC /* controllers */,
 				DD1C05222A384E3E0000DFAC /* extension */,
@@ -151,6 +159,15 @@
 				DD25CE7D2A387497005AFEFB /* CanvasView.swift */,
 			);
 			path = RYTaskApp;
+			sourceTree = "<group>";
+		};
+		DD82A34F2A3B17F1005F5A8A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD82A3512A3B1817005F5A8A /* AlertManager.swift */,
+				DD82A3502A3B1817005F5A8A /* Validator.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,13 +246,16 @@
 				DD1C05472A385EA00000DFAC /* GDCheckBox.swift in Sources */,
 				DD73F68A2A347C6800EEEE08 /* ViewController.swift in Sources */,
 				DD1C053A2A385A410000DFAC /* GDNewItemPopup.swift in Sources */,
+				DD82A3522A3B1817005F5A8A /* Validator.swift in Sources */,
 				DD1C05212A384E040000DFAC /* GDGradient.swift in Sources */,
 				DD1C05282A3853AA0000DFAC /* GDButton.swift in Sources */,
 				DD73F6862A347C6800EEEE08 /* AppDelegate.swift in Sources */,
+				DD82A3552A3B1886005F5A8A /* SignInUserRequest.swift in Sources */,
 				DD1C05452A385E7A0000DFAC /* GDListCell.swift in Sources */,
 				DD25CE7E2A387497005AFEFB /* CanvasView.swift in Sources */,
 				DD1C052F2A3855140000DFAC /* GDHeaderView.swift in Sources */,
 				DD1C05412A385D1E0000DFAC /* toDo.swift in Sources */,
+				DD82A3532A3B1817005F5A8A /* AlertManager.swift in Sources */,
 				DD1C052A2A3853F30000DFAC /* optionset.swift in Sources */,
 				DDA9A1812A355FF800BE00A5 /* PomodoroViewController.swift in Sources */,
 				DD73F6882A347C6800EEEE08 /* SceneDelegate.swift in Sources */,

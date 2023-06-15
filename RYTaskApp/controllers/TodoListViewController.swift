@@ -76,17 +76,17 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
         bgBottom = bg.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
         bgBottom.isActive = true
         bg.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        view.addSubview(listTable)
+        listTable.leftAnchor.constraint(equalTo: bg.leftAnchor, constant: tbInset).isActive = true
+        listTable.topAnchor.constraint(equalTo: bg.topAnchor, constant: tbInset).isActive = true
+        listTable.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: tbInset * -1).isActive = true
+        listTable.rightAnchor.constraint(equalTo: bg.rightAnchor, constant: tbInset * -1).isActive = true
         view.addSubview(popup)
         popup.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         popup.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         popup.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         popup.heightAnchor.constraint(equalToConstant: 80).isActive = true
         openAddItemPopup()
-        view.addSubview(listTable)
-        listTable.leftAnchor.constraint(equalTo: bg.leftAnchor, constant: tbInset).isActive = true
-        listTable.topAnchor.constraint(equalTo: bg.topAnchor, constant: tbInset).isActive = true
-        listTable.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: tbInset * -1).isActive = true
-        listTable.rightAnchor.constraint(equalTo: bg.rightAnchor, constant: tbInset * -1).isActive = true
         popup.textField.delegate = self
         popup.delegate = self
         header.delegate = self
