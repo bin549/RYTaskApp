@@ -7,8 +7,7 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
         return view
     }()
     var bgBottom:NSLayoutConstraint!
-    
-    let header = GDHeaderView(title: "待办事项", subtitle: "4 left")
+    let header = GDHeaderView(title: "待办事项", subtitle: "剩下4项")
     let popup = GDNewItemPopup()
     let tbInset:CGFloat = 16
     let listTable = GDTableView()
@@ -95,7 +94,6 @@ class TodoListViewController: UIViewController, GDHeaderDelegate, GDNewItemDeleg
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    var toDoToUpdate:ToDo?
 }
 
 extension TodoListViewController: UITextFieldDelegate {
@@ -106,12 +104,9 @@ extension TodoListViewController: UITextFieldDelegate {
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
         var heightToAnimate = -keyboardHeight - 20
-
         if textField == popup.textField {
             popup.animateView(transform: CGAffineTransform(translationX: 0, y: -keyboardHeight), duration: 0.5)
             heightToAnimate -= 80
-        } else {
-//            self.toDoToUpdate = CoreDataManager.shared.fetchToDo(title: textField.text!)
         }
         self.bgBottom.constant = heightToAnimate
         UIView.animate(withDuration: 0.3) {
@@ -126,11 +121,6 @@ extension TodoListViewController: UITextFieldDelegate {
         }
         if textField == popup.textField {
             popup.animateView(transform: CGAffineTransform(translationX: 0, y: 0), duration: 0.6)
-        } else {
-            if let toDoToUpdate = self.toDoToUpdate {
-//                CoreDataManager.shared.deleteToDo(id: toDoToUpdate.id)
-//                CoreDataManager.shared.createToDo(id: toDoToUpdate.id, title: textField.text!, status: toDoToUpdate.status)
-            }
         }
     }
 }
@@ -163,11 +153,11 @@ extension TodoListViewController: UITableViewDelegate, UITableViewDataSource, GD
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let titleForHeader = GDLabel(color: .white, size: 20, frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 44))
+        let titleForHeader = GDLabel(color: .black, size: 20, frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 44))
         if section == 0 {
-            titleForHeader.text = "To Do"
+            titleForHeader.text = "待办任务"
         } else {
-            titleForHeader.text = "Done"
+            titleForHeader.text = "已完成"
         }
         return titleForHeader
     }

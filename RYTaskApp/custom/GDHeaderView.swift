@@ -19,7 +19,7 @@ class GDHeaderView:UIView {
     
     var itemsLeft:Int = 0 {
         didSet {
-            self.subtitleLabel.text = "\(itemsLeft) Left"
+            self.subtitleLabel.text = "剩下\(itemsLeft)项"
         }
     }
 

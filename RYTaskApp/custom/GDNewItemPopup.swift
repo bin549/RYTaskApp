@@ -1,9 +1,9 @@
 import UIKit
 
 class GDNewItemPopup:GDGradient {
-    let cancel = GDButton(title: "  cancel  ", type: .roundedText, radius: 0)
-    let add = GDButton(title: "  add  ", type: .roundedText, radius: 0)
-    let textField = GDTextField(placeholder: "go buy Ikea frames", inset: 6)
+    let cancel = GDButton(title: "  取消  ", type: .roundedText, radius: 0)
+    let add = GDButton(title: "  添加  ", type: .roundedText, radius: 0)
+    let textField = GDTextField(placeholder: "背三个单词", inset: 6)
     
     var delegate:GDNewItemDelegate?
     var popupLocation:CGFloat = 70

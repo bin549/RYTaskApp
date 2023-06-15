@@ -2,22 +2,12 @@ import UIKit
 
 class GDListCell:UITableViewCell {
     var delegate:GDListCellDelegate?
-    
-    @objc func toggleStatus() {
-        if let delegate = self.delegate, let toDo = self.toDo {
-            let newToDo = ToDo(id: toDo.id, title: textField.text!, status: !toDo.status)
-            delegate.toggleToDo(toDo: newToDo)
-        }
-    }
-    
     let textField = GDTextField(placeholder: "ToDo", radius: 0, inset: 14)
     let view:UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    let box = GDCheckBox()
-    
     var toDo:ToDo? {
         didSet {
             if let toDo = toDo  {
@@ -25,6 +15,14 @@ class GDListCell:UITableViewCell {
                 box.id = toDo.id
                 textField.text = toDo.title
             }
+        }
+    }
+    let box = GDCheckBox()
+    
+    @objc func toggleStatus() {
+        if let delegate = self.delegate, let toDo = self.toDo {
+            let newToDo = ToDo(id: toDo.id, title: textField.text!, status: !toDo.status)
+            delegate.toggleToDo(toDo: newToDo)
         }
     }
     
